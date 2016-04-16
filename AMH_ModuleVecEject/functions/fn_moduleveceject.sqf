@@ -6,7 +6,7 @@ if (_activated) then
 {
 	_VecSelector = _logic getVariable "Selector"; 
 	hint format "Vehicle Eject Module initialised for %1", _VecSelector]; 
-	null = [_VecSelector] execVM "Vehicle_Eject\Vehicle_init.sqf";
+	[_VecSelector] execVM "Vehicle_Eject\Side_Selector.sqf";
 };
 
 true

@@ -66,27 +66,17 @@ class cfgVehicles
 			class Name
 			{
 				displayName = "Name";
-				description = "Name of the Module";
+				description = "Name des Moduls";
 				defaultValue = "Vehicle Eject";
 			};
 		};
 		class ModuleDescription: ModuleDescription
 		{
 			description = "Ein Modul das es ermöglicht, das Absitzen aus diversen Drehflüglern realistischer zu gestalten. Es werden sowohl für Passasgiere als auch Piloten neue Aktionen hinzugefügt."
-			sync [] = {"LocationArea_F"};
+			sync [] = {};
 			
-			class LocationArea_F
-			{
-				description[] =
-				{
-					"First line",
-					Second line"
-				};
-				position = 0; 
-				direction = 0; 
-				optional = 0;
-				diplicate = 0; 
-				synced[] = {"AnyBrain"}; 
+			position = 0; 
+			direction = 0; 
 			};
 		};
 	};
@@ -96,6 +86,7 @@ class cfgFunctions
 {
 	class AMH
 	{
+		tag= "AMH";
 		class ObjectModifiers
 		{
 			file= "\AMH_ModuleVecEject\functions";
