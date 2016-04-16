@@ -1,0 +1,19 @@
+_dir = getDir FhzOfPlayer;
+_dirp = _dir+180;
+
+if ((FhzOfPlayer doorPhase "Door_6_source") == 0) then
+{
+	FhzOfPlayer animateDoor ["Door_6_source",1,false];
+	sleep 2.3;
+};
+
+player allowDamage false;
+player action ["Eject",FhzOfPlayer];
+player attachTo [FhzOfPlayer, [0,-4.2,-2.2]];
+player setDir _dirp;
+player switchmove "AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutLow";
+
+sleep 0.526;
+detach player;
+player allowDamage true;
+
