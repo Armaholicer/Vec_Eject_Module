@@ -35,14 +35,14 @@ class cfgVehicles
 	{
 		scope = 2;
 		displayName = "Vehicle Eject";
-		icon = "\AMH_ModuleVecEject\data\ iconve_ca.paa";
+		icon = "\AMH_ModuleVecEject\data\iconve_ca.paa";
 		category = "ObjectModifiers";
 		function = "AMH_fnc_moduleveceject";
 		functionPriority = 1;
 		isGlobal = 1; 
 		isTriggerActivated = 0;
 		isDisposable= 1; 
-		is 3DEN = 0;
+		is 3DEN = 1;
 		curatorInfoType = "RSCDisplayAttributeModuleVecEject";
 		
 		class arguments: ArgumentsBaseUnits
